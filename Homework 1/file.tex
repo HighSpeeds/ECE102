@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+\title{ECE 102 Homework 1}
+
+\author{Lawrence Liu}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+$x(t-1)$ is simply the signal $x(t)$ delayed by $1$. So the plot would look like:
+\begin{figure}[h]
+\includegraphics[scale=0.4]{fig1a}
+\centering
+\end{figure}
+\subsection*{(b)}
+$x(4-t)$ is simply the signal delayed by $4$ and then reversed, so the plot would look like:
+\begin{figure}[h]
+\includegraphics[scale=0.4]{fig1b}
+\centering
+\end{figure}
+\subsection*{(c)}
+\begin{figure}[h]
+\includegraphics[scale=0.4]{fig1c}
+\centering
+\end{figure}
+\section*{Problem 2}
+\subsection*{(a)}
+\begin{align*}
+a(t) &=\cos(\theta t)\sin(\psi t)\\
+&=\frac{e^{i\theta t}+e^{-i\theta t}}{2}\frac{e^{i\psi t}-e^{-i\psi t}}{2i}\\
+&=\frac{1}{4i}(e^{i(\theta+\psi) t}-e^{i(\theta-\psi)t}+e^{i(\psi-\theta)t}-e^{-i(\theta+\psi)t})\\
+&=\frac{1}{4i}(e^{i(\theta+\psi) t}-^{-i(\theta+\psi)t})+e^{i(\psi-\theta)t}-e^{i(\theta-\psi)t})\\
+&=\frac{2i}{4i}(\sin((\theta+\psi)t)+\sin((\psi-\theta)t))\\
+&=\frac{1}{2}(\sin((\theta+\psi)t)-\sin((\theta-\psi)t))
+\end{align*}
+\subsection*{(b)}
+Yes $a(t)$ can be periodic, for instance if we want it to have a period $3$ when $\theta=2\pi$ then $\psi=\frac{4\pi}{3}$.
+\subsection*{(c)}
+The period of $\cos(10t+1)$ is $\frac{\pi}{5}$ and the period of $\sin(4t-1)$ is $\frac{\pi}{2}$. The fundamental period of $x(t)$ is the least common multiple of these two periods, which is $\boxed{\pi}$.
+\section*{Problem 3}
+\subsection*{(a)}
+The period of $\cos(3\Omega_0 t)$ is $\frac{2\pi}{3\Omega_0}$ and the period if $\cos(\Omega_0 t)$ is $\frac{2\pi}{\Omega_0}$. So the period of $x(t)=\cos(3\Omega_0 t)+5\cos(\Omega_0 t)$ is $\frac{2\pi}{\Omega_0}$. When $\Omega_0=\pi$ the period is $\boxed{2}$
+\subsection*{(b)}
+The power of a signal is 
+$$P_x=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}|x(t)|^2 dt$$
+Since $x(t)$ is real we have
+\begin{align*}
+P_x&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T} \left(\cos(3\Omega_0 t)+5\cos(\Omega_0 t)\right)^2dt\\
+&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}\left(\cos(3\pi t)+5\cos(\pi t)\right)^2dt
+\end{align*}
+
+We know that the period of $x(t)$ is $2$ when $\Omega_0=\pi$. Thus let $T=2N$. Since $T\to\infty$ leads to $N\to\infty$ we get
+$$
+P_x=\lim_{N\to\infty}\frac{1}{4N}\int_{-2N}^{2N}(\cos(3\pi t)+5\cos(\pi t)^2dt
+$$
+Since $\left(\cos(3\pi t)+5\cos(\pi t)\right)^2$ is even:
+$$P_x=\lim_{N\to\infty}\frac{1}{2N}\int_{0}^{2N}\left(\cos(3\pi t)+5\cos(\pi t)\right)^2dt$$
+Since $\left(\cos(3\pi t)+5\cos(\pi t)\right)^2$ is periodic with period $2$
+\begin{align*}
+P_x&=\lim_{N\to\infty}\frac{1}{2}\int_{0}^{2}\left(\cos(3\pi t)+5\cos(\pi t)\right)^2dt\\
+&=\lim_{N\to\infty}\frac{1}{2}\int_{0}^{2}\left(\cos^2(3\pi t)+10\cos(3\pi t)\cos(\pi t)+25\cos^2(\pi t)\right)^2dt
+\end{align*}
+Therefore we need to solve for $\int_{0}^{2}\cos^2(3\pi t)dt$, $\int_{0}^{2}\cos(3\pi t)\cos(\pi t)dt$ and $\int_{0}^{2}\cos^2(\pi t) dt$
+
+\begin{align*}
+\int_{0}^{2}\cos^2(3\pi t)dt&=3\int_{0}^{2/3}\cos^2(3\pi t)dt\\
+&=3\int_{0}^{2/3}\frac{1+\cos(6\pi t)}{2}dt\\
+&=1
+\end{align*}
+
+\begin{align*}
+\int_{0}^{2}\cos(3\pi t)\cos(\pi t)dt&=\frac{1}{4}\int_{0}^{2}(e^{3\pi t}+e^{-3\pi t})(e^{\pi t}+e^{-\pi t})dt\\
+&=\frac{1}{4}\left(\int_{0}^{2}(e^{4\pi t}+e^{-4\pi t})dt+\int_{0}^{2}(e^{2\pi t}+e^{-2\pi t})dt\right)\\
+&=\frac{1}{2}\left(\int_{0}^{2}\cos(4\pi t)dt+\int_{0}^{2}\cos(2\pi t)dt\right)\\
+&=0
+\end{align*}
+\begin{align*}
+\int_{0}^{2}\cos^2(\pi t)dt&=\int_{0}^{2}\frac{1+\cos(2\pi t)}{2}dt\\
+&=1
+\end{align*}
+Therefore we have that
+\begin{align*}
+P_x&=\frac{1}{2}(1+25)\\
+&=\boxed{13}
+\end{align*}
+\subsection*{(c)}
+\begin{align*}
+P_1&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T} \cos^2(3\Omega_0 t)dt\\
+\end{align*}
+Let $T=NT_0$ where $T_0=\frac{2\pi}{3\Omega_0}=\frac{2}{3}$ is the period of  $\cos(3\Omega_0 t)$. We have $T\to\infty$ leads to $N\to\infty$
+\begin{align*}
+P_1&=\lim_{N\to\infty}\frac{1}{2NT_0}\int_{-NT_0}^{NT_0} \cos^2(3\Omega_0 t)dt\\
+&=\lim_{N\to\infty}\frac{1}{NT_0}\int_{0}^{NT_0} \cos^2(3\Omega_0 t)dt\\
+&=\lim_{N\to\infty}\frac{1}{T_0}\int_{0}^{T_0} \cos^2(3\Omega_0 t)dt\\
+&=\lim_{N\to\infty}\frac{1}{T_0}\int_{0}^{T_0} \frac{1+\cos(6\Omega_0 t)}{2}dt\\
+&=\lim_{N\to\infty}\frac{1}{T_0}\frac{T_0}{2}\\
+&=\frac{1}{2}
+\end{align*}
+
+We can do the same for $P_2$
+
+\begin{align*}
+P_2&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T} 25\cos^2(\Omega_0 t)dt\\
+\end{align*}
+Let $T=NT_0$ where $T_0=\frac{2\pi}{\Omega_0}=2$ is the period of  $\cos(\Omega_0 t)$. We have $T\to\infty$ leads to $N\to\infty$
+\begin{align*}
+P_2&=25\lim_{N\to\infty}\frac{1}{2NT_0}\int_{-NT_0}^{NT_0} \cos^2(\Omega_0 t)dt\\
+&=25\lim_{N\to\infty}\frac{1}{NT_0}\int_{0}^{NT_0} \cos^2(\Omega_0 t)dt\\
+&=25\lim_{N\to\infty}\frac{1}{T_0}\int_{0}^{T_0} \cos^2(\Omega_0 t)dt\\
+&=25\lim_{N\to\infty}\frac{1}{T_0}\int_{0}^{T_0} \frac{1+\cos(2\Omega_0 t)}{2}dt\\
+&=25\lim_{N\to\infty}\frac{1}{T_0}\frac{T_0}{2}\\
+&=\frac{25}{2}
+\end{align*}
+
+So therefore we get that indeed $P=P_1+P_2$
+
+\subsection*{(d)}
+No $\gamma(t)$ is not periodic. A signal made up of the summation of two signals are periodic if and only if $\frac{T_0}{T_1}=\frac{N}{M}$ where $T_0$ and $T_1$ are the periods of the two signals and $N$ and $M$ are integers. The period of $\cos(t)$ is $2\pi$ and the period of $\cos(\frac{\pi}{2}t)$ is $4$. It is impossible for $\frac{2\pi}{4}$ to be equal to one integer divided by another.
+
+
+From the definition, the power of $\gamma(t)$ is:
+$$P_{\gamma}=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}|\gamma(t)|^2dt$$
+
+However since $\gamma(t)$ isn't periodic, we cannot use the technique in the lecture where we rewrite $T$ as $NT_0$. Therefore the only way is to solve the integral and the limit:
+\begin{align*}
+P_\gamma&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}(\cos(t)+\cos(\frac{\pi}{2}t))^2dt\\
+&=\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}(\cos^2(t)+\cos^2(\frac{\pi}{2}t)+2\cos(t)\cos(\frac{\pi}{2}t))dt\\
+&=P_1+P_2+\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt
+\end{align*}
+Therefore, in order for $P_\gamma=P_1+P_2$ we need $\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt=0$. The first thing to note is that $\cos(t)\cos(\frac{\pi}{2}t)$ is even, therefore we have
+$$\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt=\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt$$
+Next we rewrite $\cos(t)\cos(\frac{\pi}{2}t)$ in terms of complex exponentials and simplify
+\begin{align*}
+\cos(t)\cos(\frac{\pi}{2}t)&=\frac{e^{it}+e^{-it}}{2}\frac{e^{i\frac{\pi}{2}t}+e^{-i\frac{\pi}{2}t}}{2}\\
+&=\frac{1}{4}(e^{i(1+\frac{\pi}{2})t}+e^{-i(1+\frac{\pi}{2})t}+e^{i(\frac{\pi}{2}-1)t}+e^{-i(\frac{\pi}{2}-1)t})\\
+&=\frac{1}{2}(\cos((1+\frac{\pi}{2})t)+\cos((\frac{\pi}{2}-1)t))
+\end{align*}
+Thus we get:
+\begin{align*}
+\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt&=\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}(\cos((1+\frac{\pi}{2})t)+\cos((\frac{\pi}{2}-1)t))dt\\
+&=\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((1+\frac{\pi}{2})t)dt+\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((\frac{\pi}{2}-1)t)dt
+\end{align*}
+
+Therefore we will need to calculate $\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((1+\frac{\pi}{2})t)dt$ and $\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((\frac{\pi}{2}-1)t)dt$. Let us calculate $\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((1+\frac{\pi}{2})t)dt$ first by letting $T=NT_1$ where $T_1$ is the period of $\cos((1+\frac{\pi}{2})t)$. As $T\to\infty$, $N\to\infty$ therefore we get:
+\begin{align*}
+\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((1+\frac{\pi}{2})t)dt&=\lim_{N\to\infty}\frac{1}{NT_1}\int_{0}^{NT_1}\cos((1+\frac{\pi}{2})t)dt\\
+&=\lim_{N\to\infty}\frac{1}{T_1}\int_{0}^{T_1}\cos((1+\frac{\pi}{2})t)dt\\
+&=0
+\end{align*}
+
+Likewise for $\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((\frac{\pi}{2}-1)t)dt$, let $T=NT_2$ where $T_2$ is the period of $\cos((\frac{\pi}{2}-1)t)$. As $T\to\infty$, $N\to\infty$ therefore we get:
+\begin{align*}
+\lim_{T\to\infty}\frac{1}{T}\int_{0}^{T}\cos((\frac{\pi}{2}-1)t)dt&=\lim_{N\to\infty}\frac{1}{NT_2}\int_{0}^{NT_2}\cos((\frac{\pi}{2}-1)t)dt\\
+&=\lim_{N\to\infty}\frac{1}{T_2}\int_{0}^{T_2}\cos((\frac{\pi}{2}-1)t)dt\\
+&=0
+\end{align*}
+Thus we get $\lim_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}2\cos(t)\cos(\frac{\pi}{2}t)dt=0$, and thus $P=P_1+P_2$
+\section*{Problem 4}
+\subsection*{(a)}
+The even and odd parts of the signal are:
+$$x_e(t)=\begin{cases} 
+      |t| & |t|\leq 1 \\
+      -\frac{1}{2} |t|+\frac{3}{2} & 1< |x|\leq 2 \\
+      \frac{1}{2} & |t|>2 
+   \end{cases}$$
+$$x_o(t)=\begin{cases} 
+      -\frac{1}{2} & t\leq -2 \\
+      \frac{1}{2} t+\frac{1}{2} & -2< t\leq -1 \\
+      0 & -1<t\leq1\\
+      \frac{1}{2} t-\frac{1}{2}& 1< t\leq 2 \\
+      \frac{1}{2}& 2<t \\
+   \end{cases}$$
+Plotted out, it looks like:
+\begin{figure}[h]
+\includegraphics[scale=0.4]{fig4a}
+\centering
+\end{figure}
+\subsection*{(b)}
+\begin{align*}
+\int_{-\infty}^{\infty}|x(t)|^2dt&=\int_{-\infty}^{\infty}(x_o(t)+x_e(t))^2dt\\
+&=\int_{-\infty}^{\infty}(x_o^2(t)+2x_e(t)x_o(t)+x_e^2(t))dt\\
+&=\int_{-\infty}^{\infty}|x_o(t)|^2dt+\int_{-\infty}^{\infty}|x_e(t)|^2dt+\int_{-\infty}^{\infty}2x_e(t)x_o(t)dt
+\end{align*}
+$x_e(t)x_o(t)$ is odd. Therefore $\int_{-\infty}^{\infty}2x_e(t)x_o(t)dt=0$, and thus we get:
+$$\int_{-\infty}^{\infty}|x(t)|^2dt=\int_{-\infty}^{\infty}|x_o(t)|^2dt+\int_{-\infty}^{\infty}|x_e(t)|^2dt$$
+\end{document}
