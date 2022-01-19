@@ -4,12 +4,13 @@
 \author{Lawrence Liu}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
 
 \begin{document}
 \maketitle
-\subsection*{Problem 1}
-\subsubsection*{(a)}
+\section*{Problem 1}
+\subsection*{(a)}
 A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
 \begin{align*}
 S\{\alpha x_1(t)+\beta x_2(t)\}&=\int_{-\infty}^{2t}(\alpha x_1(\tau+3)+\beta x_2(\tau+3))d\tau\\
@@ -128,5 +129,47 @@ Furthermore, since $\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau)d\tau$ depends on values 
 \begin{align*}
 y(t)&=x(t)-\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau)d\tau\\
 &=\boxed{e^{-t}u(t+2)-\int_{t-1}^{t+1}e^{|t-\tau|}e^{-\tau}u(\tau+2)d\tau}
+\end{align*}
+\section*{Problem 3}
+\subsection*{(a)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$. Likewise a system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$.
+
+We can express $x_2(t)$ as $x_2(t)=x_1(t)-x_1(t-2)$. Therefore $y_2(t)=y_1(t)-y_1(t-2)$, this plot of this is drawn below
+\begin{figure}[h]
+\includegraphics[scale=0.3]{fig3a}
+\centering
+\end{figure}
+\subsection*{(b)}
+We can express $x_3(t)$ as $x_3(t)=x_1(t+1)+x_1(t)$. Therefore $y_3(t)=y_1(t+1)+y_1(t)$, the plot of this is drawn below
+\begin{figure}[h]
+\includegraphics[scale=0.3]{fig3b}
+\centering
+\end{figure}
+\subsection*{(c)}
+\begin{align*}
+h(t)&=\int_{t-2}^{t}\delta(\tau)d\tau\\
+&=\boxed{u(t)-u(t-2)}
+\end{align*}
+
+Because the system is LTI to find the output of the system when the input is $x(t)=u(t+2)+u(t)-2u(t-1)+\delta(t-1)$ we just need to find the system response to a unit impulse response (which we have found) and the unit step response which is $s\{u(t)\}=\int_{t-2}^{t}=\begin{cases}
+0 & t<0\\
+t & 0\leq t<2\\
+2 & t>2
+\end{cases}$. Thus $s\{u(t+2)+u(t)-2u(t-1)\}$ looks like
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{fig3c}
+\centering
+\end{figure}
+\pagebreak
+
+And thus the system output where $x(t)=u(t+2)+u(t)-2u(t-1)+\delta(t-1)$ is
+\begin{figure}[h!]
+\includegraphics[scale=0.3]{fig3c2}
+\centering
+\end{figure}
+\section*{Problem 4}
+\subsection*{(a)}
+\begin{align*}
+h(t,\tau)=\int_{-\infty}^{\infty}e^{-t}(t-\sigma)^2u(t+\sigma)\delta(\sigma-\tau-2)d\sigma
 \end{align*}
 \end{document}
