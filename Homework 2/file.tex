@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\title{ECE 102 Homework 2}
+
+\author{Lawrence Liu}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\maketitle
+\subsection*{Problem 1}
+\subsubsection*{(a)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
+\begin{align*}
+S\{\alpha x_1(t)+\beta x_2(t)\}&=\int_{-\infty}^{2t}(\alpha x_1(\tau+3)+\beta x_2(\tau+3))d\tau\\
+&=\alpha\int_{-\infty}^{2t}x_1(\tau+3)d\tau+\beta\int_{-\infty}^{2t}x_2(\tau+3)d\tau\\
+&=\alpha y_1(t)+\beta y_2(t)
+\end{align*}
+Thus this system is $\boxed{\text{linear}}$.
+
+A system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$
+\begin{align*}
+S\{x(t-\sigma)\}&=\int_{-\infty}^{2t}x(\tau+3-\sigma)d\tau
+\end{align*}
+let $\lambda=\tau-\sigma$, $d\lambda=d\tau$, and the limits of the integral become $-\infty$ to $2t-\sigma$, thus we get
+$$S\{x(t-\sigma)\}=\int_{-\infty}^{2t-\sigma}x(\lambda+3)d\lambda$$
+Since $y(t-\sigma)=\int_{-\infty}^{2(t-\sigma)}x(\tau+3)d\tau$ we get that the system is $\boxed{\text{time variant}}$.
+
+This system is also $\boxed{\text{non causual}}$ since $\int_{-\infty}^{2t}x(\tau+3)d\tau$ depends on the value of $x()$ past time $t$
+
+If $x(t)=u(t-2)-u(t-4)$ we get that 
+\begin{align*}
+y(t)&=\int_{-\infty}^{2t}x(\tau+3)d\tau\\
+&=\int_{-\infty}^{2t}u(\tau+1)d\tau-\int_{-\infty}^{2t}u(\tau-1)d\tau\\
+&=\boxed{\begin{cases}
+0 & t\leq-0.5\\
+2t+1 & -0.5<t\leq0.5\\
+2 & t>0.5
+\end{cases}}
+\end{align*}
+\subsection*{(b)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
+\begin{align*}
+S\{\alpha x_1(t)+\beta x_2(t)\}&=(\alpha x_1(t)+\beta x_2(t))\sin(\pi t)\\
+&=\alpha x_1(t)\sin(\pi t)+\beta x_2(t)\sin(\pi t)\\
+&=\alpha y_1(t)+\beta y_2(t)
+\end{align*}
+Thus this system is $\boxed{\text{linear}}$.
+
+A system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$
+$$S\{x(t-\sigma)\}=x(t-\sigma)\sin(\pi t)$$
+Since $y(t-\sigma)=x(t-\sigma)\sin(\pi (t-\sigma))$ we have that the system is $\boxed{\text{time variant}}$
+This system is also $\boxed{\text{causual}}$ since $x(t)\sin(\pi t)$ depends only on the value of $x()$ at time $t$.
+
+If $x(t)=u(t-2)-u(t-4)$ we get that $y(t)=\boxed{u(t-2)\sin(\pi t)-u(t-4)\sin(\pi t)}$
+\subsection*{(c)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
+\begin{align*}
+S\{\alpha x_1(t)+\beta x_2(t)\}&=\frac{d}{dt}(\alpha x_1(t)+\beta x_2(t))\\
+&=\alpha\frac{dx_1(t)}{dt}+\beta\frac{dx_2(t)}{dt}\\
+&=\alpha y_1(t)+\beta y_2(t)
+\end{align*}
+Thus this system is $\boxed{\text{linear}}$.
+
+A system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$
+\begin{align*}
+S\{x(t-\sigma)\}&=\frac{d x(t-\sigma)}{dt}\\
+&=\frac{d x(t-\sigma)}{d (t-\sigma)}\frac{d (t-\sigma)}{dt}\\
+&=\frac{d x(t-\sigma)}{d (t-\sigma)}
+\end{align*}
+Since $y(t-\sigma)=\frac{d x(t-\sigma)}{d (t-\sigma)}$ therefore this system is $\boxed{\text{time invariant}}$
+
+Furthermore, since $\frac{d x(t)}{dt}=\lim_{\Delta t\to0}\frac{x(t+\Delta t)-x(t)}{\Delta t}$ the system is $\boxed{\text{non causual}}$.
+
+If $x(t)=u(t-2)-u(t-4)$ we get that
+\begin{align*}
+y(t)&=\frac{d x(t)}{dt}\\
+&=\boxed{\delta(t-2)-\delta(t-4)}
+\end{align*}
+
+
+
+\end{document}
