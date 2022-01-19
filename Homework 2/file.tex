@@ -77,6 +77,28 @@ If $x(t)=u(t-2)-u(t-4)$ we get that
 y(t)&=\frac{d x(t)}{dt}\\
 &=\boxed{\delta(t-2)-\delta(t-4)}
 \end{align*}
+\subsection*{(d)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
+\begin{align*}
+S\{\alpha x_1(t)+\beta x_2(t)\}&=\alpha x_1(2-t)+\beta x_2(2-t)+\alpha x_1(2+t)+\beta x_2(2+t)\\
+&=\alpha y_1(t)+\beta y_2(t)
+\end{align*}
+Thus this system is $\boxed{\text{linear}}$.
+
+A system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$
+\begin{align*}
+S\{x(t-\sigma)\}=x(2-t-\sigma)+x(2+t-\sigma)
+\end{align*}
+Since $y(t-\sigma)=x(2-(t-\sigma))+x(2+(t-\sigma))$ therefore this system is $\boxed{\text{time variant}}$
+
+This system is also $\boxed{\text{non causual}}$ since $y(t)$ depends on values of $x()$ past time $t$, specifically $x(t+2)$.
+If $x(t)=u(t-2)-u(t-4)$ we get that
+\begin{align*}
+y(t)&=x(2-t)+x(2+t)\\
+&=u((2-t)-2)+u((t+2)-2)-u((2-t)-4)-u((2+t)-4)\\
+&=u(-t)+u(t)-u(-2-t)-u(-2+t)\\
+&=\boxed{0}
+\end{align*}
 
 
 
