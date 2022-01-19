@@ -99,7 +99,34 @@ y(t)&=x(2-t)+x(2+t)\\
 &=u(-t)+u(t)-u(-2-t)-u(-2+t)\\
 &=\boxed{0}
 \end{align*}
+\section*{Problem 2}
+\subsection*{(a)}
+\begin{align*}
+y(t)&=x(t)-\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau)d\tau\\
+&=\int_{t-1}^{t+1}x(\tau)(\delta(\tau-t)-e^{|t-\tau|})d\tau\\
+&=\boxed{\int_{-\infty}^{\infty}x(\tau)\left(\delta(\tau-t)-e^{|t-\tau|}\left(u(\tau-1)-u(\tau+1)\right)\right)d\tau}
+\end{align*}
+\subsection*{(b)}
+A system is linear if given that $S\{x_1(t)\}=y_1(t)$ and $S\{x_2(t)\}=y_2(t)$, we get that $S\{\alpha x_1(t)+\beta x_2(t)\}=\alpha x_1(t) +\beta x_2(t)$
+\begin{align*}
+S\{\alpha x_1(t)+\beta x_2(t)\}&=\int_{-\infty}^{\infty}\left(\alpha x_1(\tau)+\beta x_2(\tau)\right)\left(\delta(\tau-t)-e^{|t-\tau|}\left(u(\tau-1)-u(\tau+1)\right)\right)d\tau\\
+&=\alpha y_1(t)+\beta y_2(t)
+\end{align*}
+Thus this system is $\boxed{\text{linear}}$.
 
+A system is time invariant if given $S\{x(t)\}=y(t)$, $S\{x(t-\sigma)\}=y(t-\sigma)$
+\begin{align*}
+S\{x(t-\sigma)\}&=x(t-\sigma)-\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau-\sigma)d\tau
+\end{align*}
+$$y(t-\sigma)=x(t-\sigma)-\int_{t-1-\sigma}^{t+1-\sigma}e^{|t-\tau-\sigma|}x(\tau)d\tau$$
+Let $\lambda=\tau-\sigma$, thus $d\lambda=d\sigma$ and the limits of the integral become $t-1$ and $t+1$, then we get
+$$y(t-\sigma)=x(t-\sigma)-\int_{t-1}^{t+1}e^{|t-\sigma|}x(\lambda-\sigma)d\tau$$
+Thus the system is $\boxed{\text{time invariant}}$
 
-
+Furthermore, since $\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau)d\tau$ depends on values of $x()$ past time $t$ the system is $\boxed{\text{non causual}}$.
+\subsection*{(c)}
+\begin{align*}
+y(t)&=x(t)-\int_{t-1}^{t+1}e^{|t-\tau|}x(\tau)d\tau\\
+&=\boxed{e^{-t}u(t+2)-\int_{t-1}^{t+1}e^{|t-\tau|}e^{-\tau}u(\tau+2)d\tau}
+\end{align*}
 \end{document}
