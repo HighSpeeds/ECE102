@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\title{ECE 102 Homework 2}
+
+\author{Lawrence Liu}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+\begin{align*}
+h(t)&=\int_{-\infty}^{t-1}e^t\cos(2\tau+2-2t)\delta(\tau)e^{2-\tau}d\tau\\
+&=\int_{-\infty}^{t-1}e^t\cos(2-2t)\delta(\tau)e^{2}d\tau\\
+&=e^{t+2}\cos(2-2t)u(t-1)
+\end{align*}
+Since $h(t,\tau)=h(t-\tau)=0$ for $t<\tau$, this system is causal. Furthermore, since $e^t$ is not bounded (it goes to $\infty$ as $t\to\infty$), this system is not BIBO.
+\subsection*{(b)}
+\begin{align*}
+h(t)&=e^{-t}\int_{-\infty}^{t}e^\tau[\cos(t)\cos(\tau)-\sin(t)\sin(\tau)]\delta(\tau)d\tau\\
+&=e^{-t}\int_{-\infty}^{t}e^\tau\cos(t+\tau)\delta(\tau)d\tau\\
+&=e^{-t}\int_{-\infty}^{t}\cos(t)\delta(\tau)d\tau\\
+&=e^{-t}\cos(t)u(t)
+\end{align*}
+Since $h(t,\tau)=h(t-\tau)=0$ for $t<\tau$, this system is causal. To find if the system is BIBO, let us input a bounded signal $|x(t)|<M<+\infty$ and determine if the output is bounded as well
+$$
+|y(t)|=\left|e^{-t}\int_{-\infty}^{t}e^\tau[\cos(t)\cos(\tau)-\sin(t)\sin(\tau)]x(\tau)d\tau\right|
+$$
+Since $e^t$ and $e^-t$ are positive for any $t$ we get
+\begin{align*}
+|y(t)|&=e^{-t}\int_{-\infty}^{t}e^\tau|\cos(t+\tau)x(\tau)|d\tau\\
+&=e^{-t}\int_{-\infty}^{t}e^\tau|\cos(t+\tau)||x(\tau)|d\tau\\
+&\leq e^{-t}\int_{-\infty}^{t}e^\tau|\cos(t+\tau)|Md\tau\\
+&\leq Me^{-t}\int_{-\infty}^{t}e^\tau d\tau\\
+&=Me^{-t}e^t\\
+&=M<+\infty
+\end{align*}
+Thus this system is BIBO.
+\subsection*{(c)}
+\begin{align*}
+h(t)&=\int_{-\infty}^{t-1}e^{-(t-\tau)}\delta(\tau-2)d\tau\\
+&=\int_{-\infty}^{t-1}e^{-(t-2)}\delta(\tau-2)d\tau\\
+&=e^{2-t}u(t-3)
+\end{align*}
+Since $h(t,\tau)=h(t-\tau)=0$ for $t<\tau$, this system is causal.
+\end{document}
