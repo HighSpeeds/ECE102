@@ -291,4 +291,50 @@ $$y_1(t)=\boxed{\begin{cases}
 \frac{\cos(2\pi(t-1))-1}{2\pi} & 1<t<2\\
 0 & t\geq2
 \end{cases}}$$
+\subsection*{(c)}
+\begin{align*}
+y_2(t)&=x(t)\cdot h(t)\\
+&=\boxed{\sin(2\pi t)u(t+1)u(-t+1)(u(t)-u(t-1))}
+\end{align*}
+\subsection*{(d)}
+\begin{lstlisting}
+t=linspace(-3,3,600);
+%define functions
+u=@(t) heaviside(t);
+x = @(t) sin(2.*pi.*t).*u(t + 1).*u(-t + 1);
+h=@(t) u(t)-u(t-1);
+
+%plot y_1(t)
+y1=[zeros(1,200),...
+    (1.-cos(2.*pi.*t(201:300)))./(2*pi),...
+    zeros(1,100),...
+    (cos(2.*pi.*(t(401:500)-1))-1)./(2*pi),...
+    zeros(1,100)];
+
+figure;
+plot(t,y1)
+xlabel('t');
+ylabel('y_1(t)');
+title('Signal y_1(t) vs t');
+
+%plot y_2(t)
+figure;
+plot(t,x(t).*h(t))
+xlabel('t');
+ylabel('y_2(t)');
+title('Signal y_2(t) vs t');
+\end{lstlisting}
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{4d1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{4d2}
+\end{subfigure}
+\end{figure}
+\subsection*{(e)}
+
 \end{document}
