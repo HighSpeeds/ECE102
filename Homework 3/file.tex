@@ -336,5 +336,20 @@ title('Signal y_2(t) vs t');
 \end{subfigure}
 \end{figure}
 \subsection*{(e)}
+\begin{lstlisting}
+t=linspace(-3,3,600);
+%define functions
+u=@(t) heaviside(t);
+x = @(t) sin(2.*pi.*t).*u(t + 1).*u(-t + 1);
+h=@(t) u(t)-u(t-1);
 
+%plot y1(t)
+figure;
+plot(t,conv(x(t),h(t),'same')*(t(2)-t(1)));
+xlabel('t');
+ylabel('y_1(t)');
+title('Signal y_1(t) vs t');
+\end{lstlisting}
+\begin{figure}[h]\includegraphics[width=8cm]{4e}
+\end{figure}
 \end{document}
