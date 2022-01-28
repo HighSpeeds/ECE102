@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.21)  28 JAN 2022 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.21)  28 JAN 2022 01:23
 entering extended mode
 **./file.tex
 (file.tex
@@ -260,38 +260,57 @@ Package pdftex.def Info: 3d.jpg  used on input line 225.
 File: 4a1.png Graphic file (type png)
 <use 4a1.png>
 Package pdftex.def Info: 4a1.png  used on input line 254.
-(pdftex.def)             Requested size: 77.99881pt x 64.09914pt.
-File: 4a1.png Graphic file (type png)
-<use 4a1.png>
-Package pdftex.def Info: 4a1.png  used on input line 258.
-(pdftex.def)             Requested size: 77.99881pt x 64.09914pt.
- [12 <./4a1.png (PNG copy)>]
-(C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\build\file.aux) ) 
+(pdftex.def)             Requested size: 175.49881pt x 144.23254pt.
+<4a2.png, id=51, 332.442pt x 275.5896pt>
+File: 4a2.png Graphic file (type png)
+<use 4a2.png>
+Package pdftex.def Info: 4a2.png  used on input line 258.
+(pdftex.def)             Requested size: 175.49881pt x 145.48567pt.
+ [12 <./4a1.png (PNG copy)> <./4a2.png (PNG copy)>]
+Overfull \hbox (38.85492pt too wide) in paragraph at lines 266--268
+\OT1/cmr/m/n/12 Under dif-fer-ent val-ues of $\OML/cmm/m/it/12 t$\OT1/cmr/m/n/1
+2 , $[][] [](2\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 u\OT1/cmr/m/
+n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + 1)\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 
+(\OMS/cmsy/m/n/12  \OML/cmm/m/it/12  \OT1/cmr/m/n/12 + 1) [] \OML/cmm/m/it/12 
+d$
+ []
+
+
+Overfull \hbox (44.1417pt too wide) detected at line 276
+[]
+ []
+
+
+Overfull \hbox (54.96187pt too wide) detected at line 284
+[]
+ []
+
+[13] [14] (C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\build\file.aux) ) 
 Here is how much of TeX's memory you used:
- 4382 strings out of 479334
- 69893 string characters out of 2855659
+ 4389 strings out of 479334
+ 69961 string characters out of 2855659
  371287 words of memory out of 3000000
- 21832 multiletter control sequences out of 15000+200000
+ 21839 multiletter control sequences out of 15000+200000
  409753 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,88p,301b,1515s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\
-Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C
+ 
+<C:\Users\Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Law
+rence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
 :/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawrence/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/La
-wrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb>
+mr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb>
 Output written on "C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\build\file
-.pdf" (12 pages, 206853 bytes).
+.pdf" (14 pages, 224846 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -247,15 +247,48 @@ xlabel('t');
 ylabel('h(t)');
 title('Signal h(t) vs t');
 \end{lstlisting}
-\begin{figure}
+\begin{figure}[h]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{4a1}
+  \includegraphics[width=.9\linewidth]{4a1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{4a1}
+  \includegraphics[width=.9\linewidth]{4a2}
 \end{subfigure}
 \end{figure}
+\subsection*{(b)}
+\begin{align*}
+y_1(t)&=x(t)*h(t)\\
+&=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)d\tau\\
+&=\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau
+\end{align*}
+Under different values of $t$, $\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau$ yields different expressions
+\begin{itemize}
+\item When $t\leq-1$ or $t\geq2$, $u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)=0$ for all values of $\tau$, thus we get
+$$\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau=0$$
+\item When $-1<t<0$, $u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)=1$ for $-1<\tau<t$, thus we get
+\begin{align*}
+\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau&=\int_{-1}^{t}\sin(2\pi\tau)d\tau\\
+&=\left.-\frac{\cos(2\pi\tau)}{2\pi}\right|_{\tau=-1}^{t}\\
+&=\frac{1-\cos(2\pi t)}{2\pi}
+\end{align*}
+\item When $0<t<1$ we get $u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)=1$ for $t-1<\tau<t$, since the period of $\sin(2\pi\tau)$ is $1$ we get
+$$\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau=0$$
+\item When $1<t<2$ we get $u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)=1$ for $t-1<\tau<1$, thus we get
+\begin{align*}
+\int_{-\infty}^{\infty}\sin(2\pi\tau)u(\tau+1)u(-\tau+1)\left(u(t-\tau)-u(t-\tau-1)\right)d\tau&=\int_{t-1}^{1}\sin(2\pi\tau)d\tau\\
+&=\left.-\frac{\cos(2\pi\tau)}{2\pi}\right|_{\tau=t-1}^{1}\\
+&=\frac{\cos(2\pi(t-1))-1}{2\pi}
+\end{align*}
+\end{itemize}
+Therefore we get that:
+$$y_1(t)=\boxed{\begin{cases}
+0 & t\leq-1\\
+\frac{1-\cos(2\pi t)}{2\pi} & -1<t<0\\
+0 &  0\leq t\geq1\\
+\frac{\cos(2\pi(t-1))-1}{2\pi} & 1<t<2\\
+0 & t\geq2
+\end{cases}}$$
 \end{document}
