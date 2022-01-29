@@ -79,14 +79,26 @@ Since these systems are linear we can break it up into two integrals $\int_{-\in
 &=u(\tau)u(t-\tau)\int_{-\infty}^{\infty}\delta(\sigma-\tau)d\sigma\\
 &=u(\tau)u(t-\tau)
 \end{align*}
-To evaluate the second integral let us first evaluate it in two regions, when $t>\tau+2$, $\tau>0$, and everywhere else. When $t>\tau+2$ and $\tau>0$ we get
+The second integral can be evaluated to 3 different expression:
+\begin{itemize}
+\item When $t<\tau+2$ or when $t<0$ we get that $u(\sigma)u(\sigma-2-\tau)u(t-\sigma)$ for all $\sigma$, thus we get
+$$\int_{-\infty}^{\infty}e^{-(\sigma-\tau)}u(\tau)u(\sigma)u(\sigma-2-\tau)u(t-\sigma)d\sigma=0$$
+\item $t>0$ and $\tau<0$ we get that 
+$u(\sigma)u(\sigma-2-\tau)u(t-\sigma)$ for $0<\sigma<t$, thus we get
+\begin{align*}
+\int_{-\infty}^{\infty}e^{-(\sigma-\tau)}u(\tau)u(\sigma)u(\sigma-2-\tau)u(t-\sigma)d\sigma&=\int_{0}^{t}e^{-(\sigma-\tau)}u(\tau)d\sigma\\
+&=-u(\tau)\left.e^{\tau-\sigma}\right|_{\sigma=0}^{t}\\
+&=u(\tau)(e^\tau-e^{\tau-t})
+\end{align*}
+However since $\tau<0$ we get $u(\tau)=0$ and thus $$\int_{-\infty}^{\infty}e^{-(\sigma-\tau)}u(\tau)u(\sigma)u(\sigma-2-\tau)u(t-\sigma)d\sigma=0$$
+\item When $t>\tau+2$ and $\tau>0$ we get that $u(\sigma)u(\sigma-2-\tau)u(t-\sigma)$ for $\tau+2<\sigma<t$, thus we get
+
 \begin{align*}
 \int_{-\infty}^{\infty}e^{-(\sigma-\tau)}u(\tau)u(\sigma)u(\sigma-2-\tau)u(t-\sigma)d\sigma&=\int_{2+\tau}^{t}e^{-\sigma+\tau}d\sigma\\
 &=\left.-e^{-\sigma+\tau}\right|_{\sigma=2+\tau}^{t}\\
-&=e^{-2}-e^{-t+\tau}
+&=(e^{-2}-e^{-t+\tau})
 \end{align*}
-And everywhere else we get 
-$$\int_{-\infty}^{\infty}e^{-(\sigma-\tau)}u(\tau)u(\sigma)u(\sigma-2-\tau)u(t-\sigma)d\sigma=0$$
+\end{itemize}
 Thus we get that 
 $$h_{12}(t,\tau)=\boxed{u(\tau)u(t-\tau)-u(\tau)u(t-2-\tau)(e^{-2}-e^{-t+\tau})}$$
 \subsection*{(c)}
@@ -134,7 +146,6 @@ $$h_{21}(t,\tau)=\boxed{\begin{cases}
 1+e^{-t}-e^{-2} & t>2 \text{ and } \tau<0\\
 1+e^{\tau-t}-e^{-2} & t>2 \text{ and } 0<\tau<t-2
 \end{cases}}$$
-\pagebreak
 \section*{Problem 3}
 \subsection*{(a)}
 \begin{lstlisting}
@@ -350,6 +361,6 @@ xlabel('t');
 ylabel('y_1(t)');
 title('Signal y_1(t) vs t');
 \end{lstlisting}
-\begin{figure}[h]\includegraphics[width=8cm]{4e}
+\begin{figure}[h]\includegraphics[width=6cm]{4e}
 \end{figure}
 \end{document}

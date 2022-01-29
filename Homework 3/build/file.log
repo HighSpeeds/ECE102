@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.21)  28 JAN 2022 01:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.21)  28 JAN 2022 20:59
 entering extended mode
 **./file.tex
 (file.tex
@@ -208,7 +208,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 
 {C:/Users/Lawrence/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4] 
 [5]
-Overfull \hbox (27.46062pt too wide) detected at line 111
+Overfull \hbox (27.46062pt too wide) detected at line 123
 []
  []
 
@@ -222,52 +222,51 @@ Missing character: There is no ’ in font cmr12!
 <3a.png, id=34, 172.0026pt x 135.8676pt>
 File: 3a.png Graphic file (type png)
 <use 3a.png>
-Package pdftex.def Info: 3a.png  used on input line 151.
+Package pdftex.def Info: 3a.png  used on input line 162.
 (pdftex.def)             Requested size: 227.62204pt x 179.80392pt.
  [8 <./3a.png (PNG copy)>]
 <3b.png, id=38, 190.311pt x 151.2852pt>
 File: 3b.png Graphic file (type png)
 <use 3b.png>
-Package pdftex.def Info: 3b.png  used on input line 165.
+Package pdftex.def Info: 3b.png  used on input line 176.
 (pdftex.def)             Requested size: 227.62204pt x 180.95729pt.
-<3c.png, id=39, 335.3328pt x 275.5896pt>
+ [9 <./3b.png (PNG copy)>]
+<3c.png, id=42, 335.3328pt x 275.5896pt>
 File: 3c.png Graphic file (type png)
 <use 3c.png>
-Package pdftex.def Info: 3c.png  used on input line 183.
+Package pdftex.def Info: 3c.png  used on input line 194.
 (pdftex.def)             Requested size: 227.62204pt x 187.07043pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9 <./3b.png (PNG copy)>]
+ [10 <./3c.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-04.
+15.
 
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 204.
-
-[10 <./3c.png (PNG copy)>]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
 <3d.jpg, id=46, 877.2775pt x 658.46pt>
 File: 3d.jpg Graphic file (type jpg)
 <use 3d.jpg>
-Package pdftex.def Info: 3d.jpg  used on input line 225.
+Package pdftex.def Info: 3d.jpg  used on input line 236.
 (pdftex.def)             Requested size: 227.62204pt x 170.8439pt.
- [11 <./3d.jpg>]
-<4a1.png, id=50, 335.3328pt x 275.5896pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <./3d.jpg>]
+<4a1.png, id=53, 335.3328pt x 275.5896pt>
 File: 4a1.png Graphic file (type png)
 <use 4a1.png>
-Package pdftex.def Info: 4a1.png  used on input line 254.
+Package pdftex.def Info: 4a1.png  used on input line 265.
 (pdftex.def)             Requested size: 175.49881pt x 144.23254pt.
-<4a2.png, id=51, 332.442pt x 275.5896pt>
+<4a2.png, id=54, 332.442pt x 275.5896pt>
 File: 4a2.png Graphic file (type png)
 <use 4a2.png>
-Package pdftex.def Info: 4a2.png  used on input line 258.
+Package pdftex.def Info: 4a2.png  used on input line 269.
 (pdftex.def)             Requested size: 175.49881pt x 145.48567pt.
- [12 <./4a1.png (PNG copy)> <./4a2.png (PNG copy)>]
-Overfull \hbox (38.85492pt too wide) in paragraph at lines 266--268
+
+Overfull \hbox (38.85492pt too wide) in paragraph at lines 277--279
 \OT1/cmr/m/n/12 Under dif-fer-ent val-ues of $\OML/cmm/m/it/12 t$\OT1/cmr/m/n/1
 2 , $[][] [](2\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 u\OT1/cmr/m/
 n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 + 1)\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 
@@ -276,56 +275,61 @@ d$
  []
 
 
-Overfull \hbox (44.1417pt too wide) detected at line 276
+Overfull \hbox (44.1417pt too wide) detected at line 287
 []
  []
 
-
-Overfull \hbox (54.96187pt too wide) detected at line 284
+[13 <./4a1.png (PNG copy)> <./4a2.png (PNG copy)>]
+Overfull \hbox (54.96187pt too wide) detected at line 295
 []
  []
 
-[13] [14]
+[14]
 <4d1.png, id=62, 340.1508pt x 279.444pt>
 File: 4d1.png Graphic file (type png)
 <use 4d1.png>
-Package pdftex.def Info: 4d1.png  used on input line 331.
+Package pdftex.def Info: 4d1.png  used on input line 342.
 (pdftex.def)             Requested size: 175.49881pt x 144.17749pt.
 <4d2.png, id=63, 340.1508pt x 279.444pt>
 File: 4d2.png Graphic file (type png)
 <use 4d2.png>
-Package pdftex.def Info: 4d2.png  used on input line 335.
+Package pdftex.def Info: 4d2.png  used on input line 346.
 (pdftex.def)             Requested size: 175.49881pt x 144.17749pt.
- [15 <./4d1.png (PNG copy)> <./4d2.png (PNG copy)>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15]
 <4e.png, id=67, 340.1508pt x 279.444pt>
 File: 4e.png Graphic file (type png)
 <use 4e.png>
-Package pdftex.def Info: 4e.png  used on input line 353.
-(pdftex.def)             Requested size: 227.62204pt x 187.0005pt.
- [16 <./4e.png (PNG copy)>] (C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\
-build\file.aux) ) 
+Package pdftex.def Info: 4e.png  used on input line 364.
+(pdftex.def)             Requested size: 170.71652pt x 140.25038pt.
+ [16 <./4d1.png (PNG copy)> <./4d2.png (PNG copy)> <./4e.png (PNG copy)>]
+(C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\build\file.aux) ) 
 Here is how much of TeX's memory you used:
  4411 strings out of 479334
  70176 string characters out of 2855659
- 373287 words of memory out of 3000000
+ 386287 words of memory out of 3000000
  21861 multiletter control sequences out of 15000+200000
  409753 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,88p,301b,1515s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\tcrm1200.pk><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrenc
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
-ers/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+ <C:\Users\
+Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C
+:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawrence/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/La
+wrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb>
 Output written on "C:\Users\Lawrence\Desktop\UCLA\ECE 102\Homework 3\build\file
-.pdf" (16 pages, 273507 bytes).
+.pdf" (16 pages, 274049 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
