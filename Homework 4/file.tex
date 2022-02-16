@@ -5,6 +5,9 @@
 \author{Lawrence Liu}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage[scr]{rsfso}
+
+\newcommand{\Laplace}{\mathscr{L}}
 \setlength{\parskip}{\baselineskip}%
 \setlength{\parindent}{0pt}%
 \usepackage{listings}
@@ -17,12 +20,22 @@ $$3s^2Y(S)+19sY(s)+20Y(S)=2sX(s)-X(s)$$
 $$H(s)=\boxed{\frac{2s-1}{3s^2+19s+20}}$$
 \subsection*{(b)}
 $$X(s)=\frac{2}{2s+1}e^{-3s}$$
-$$Y(s)=H(s)X(s)$$
-$$Y(s)=e^{-3s}\frac{(2s-1)}{(3s^2+19s+20)(s+\frac{1}{2})}$$
-$$Y(s)=e^{-3s}\frac{(2s-1)}{(3s+4)(s+5)(s+\frac{1}{2})}$$
-$$Y(s)=\frac{e^{-3s}}{3}\frac{(2s-1)}{(s+\frac{4}{3})(s+5)(s+\frac{1}{2})}$$
-$$Y(s)=\frac{e^{-3s}}{3}\left(\frac{-\frac{5}{3}}{s+\frac{4}{3}}+\frac{-11}{s+5}+\frac{-2}{s+\frac{1}{2}}\right)$$
-$$Y(t)=\boxed{-\frac{5}{9}e^{-\frac{4}{3}(t-3)}u(t-3)-\frac{11}{3}e^{-5(t-3)}u(t-3)-\frac{2}{3}e^{-\frac{t-3}{2}}u(t-3)}$$
+\begin{align*}
+Y(s)&=H(s)X(s)\\
+&=e^{-3s}\frac{(2s-1)}{(3s^2+19s+20)(s+\frac{1}{2})}\\
+&=e^{-3s}\frac{(2s-1)}{(3s+4)(s+5)(s+\frac{1}{2})}\\
+&=\frac{e^{-3s}}{3}\frac{(2s-1)}{(s+\frac{4}{3})(s+5)(s+\frac{1}{2})}\\
+&=\frac{e^{-3s}}{3}\frac{(2s+1)-2}{(s+\frac{4}{3})(s+5)(s+\frac{1}{2})}\\
+&=\frac{e^{-3s}}{3}\left( 2\left(\frac{1}{(s+\frac{4}{3})(s+5)}\right)-\frac{2}{(s+\frac{4}{3})(s+5)(s+\frac{1}{2})}\right)
+\end{align*}
+We can rewrite 
+$$\frac{1}{(s+\frac{4}{3})(s+5)}=\frac{3}{11}\left(\frac{1}{s+\frac{4}{3}}-\frac{1}{s+5}\right)$$
+and 
+$$\frac{1}{(s+\frac{4}{3})(s+5)(s+\frac{1}{2})}=-\frac{18}{55}\frac{1}{s+\frac{4}{3}}+\frac{2}{33}\frac{1}{s+5}+\frac{4}{15}\frac{1}{s+\frac{1}{2}}$$
+
+Thus we have that
+$$y(t)=\boxed{\frac{2}{3}\left(\frac{-3}{55}e^{-\frac{4}{3}(t-3)}+\frac{-11}{33}e^{-5(t-3)}-\frac{4}{15}e^{-\frac{1}{2}(t-3)}\right)u(t-3)}$$
+
 \section*{Problem 2}
 \subsection*{(a)}
 The system response function is
@@ -44,11 +57,20 @@ $$X(s)=\frac{1}{s}\left(e^{2s}-e^{-2s}\right)$$
 \begin{align*}
 Y(s)&=X(s)H(s)\\
 &=\left(e^{2s}-e^{-2s}\right)\frac{2(s-8)}{s(s+2)(s+3)}\\
-&=-\left(e^{2s}-e^{-2s}\right)\left(\frac{16}{s}+\frac{20}{s+2}+\frac{22}{s+3}\right)
+&=-2\left(e^{2s}-e^{-2s}\right)\left(\frac{1}{(s+2)(s+3)}-8\frac{1}{s(s+2)(s+3)}\right)
 \end{align*}
+Expanding
+
+$$\frac{1}{(s+2)(s+3)}=\frac{1}{s+2}-\frac{1}{s+3}$$
+$$\frac{1}{s(s+2)(s+3)}=\frac{1}{6s}-\frac{1}{2(s+2)}+\frac{1}{3(s+3)}$$
+
+Thus we get that
+$$\frac{1}{(s+2)(s+3)}-8\frac{1}{s(s+2)(s+3)}=\frac{5}{s+2}-\frac{4}{3s}-\frac{11}{3(s+3)}$$
+
+
 Reverse Laplace transforming we get that
 
-$$y(t)=\boxed{\left(16+20e^{-2(t-2)}+22e^{-3(t-2)}\right)u(t-2)-\left(16+20e^{-2(t+2)}+22e^{-3(t+2)}\right)u(t+2)}$$
+$$y(t)=\boxed{2\left(-\frac{4}{3}+5e^{-2(t-2)}-\frac{11}{3}e^{-3(t-2)}\right)u(t-2)-2\left(-\frac{4}{3}+5e^{-2(t+2)}-\frac{11}{3}e^{-3(t+2)}\right)u(t+2)}$$
 \section*{Problem 3}
 \subsection*{(a)}
 Let $a(t)$, $b(t)$, and $c(t)$ be determined as depicted in the drawing below
@@ -86,7 +108,24 @@ $$\boxed{\frac{d^2y(t)}{dt^2}+3\frac{dy(t)}{dt}+2y(t)=2\frac{d^2x(t)}{dt^2}+4\fr
 \subsection*{(c)}
 \begin{align*}
 H(s)&=\frac{2s^2+4s-6}{s^2+3s+2}\\
-&=
-
+&=\frac{2s^2+4s-6}{(s+1)(s+2)}\\
+&=\frac{2s}{s+1}-\frac{6}{(s+1)(s+2)}\\
+&=\frac{2s+2-2}{s+1}-\frac{6}{s+1}+\frac{6}{s+2}\\
+&=2-\frac{8}{s+1}+\frac{6}{s+2}
 \end{align*}
+
+Inverse laplace transforming we get that
+$$h(t)=2\delta(t)-8e^{-t}+6e^{-2t}$$
+
+\begin{align*}
+H(\frac{s}{3})&\to \frac{1}{3}h(3t)\\
+H(\frac{s}{3}-4)&\to\frac{1}{3}e^{4t}h(3t)\\
+e^{-4s}H(\frac{s}{3}-4)&\to\frac{1}{3}e^{4(t-4)}h(3(t-4))\\
+e^{-4s}H(\frac{s}{3}-4)&\to\boxed{\frac{1}{3}e^{4(t-4)}\left(2\delta(3(t-4))-8e^{-3(t-4)}+6e^{-6(t-4)}\right)}
+\end{align*}
+\section*{Problem 4}
+\subsection*{(a)}
+$$\Omega_k=\boxed{\frac{2k\pi}{T_0}}$$
+\subsection*{(b)}
+
 \end{document}

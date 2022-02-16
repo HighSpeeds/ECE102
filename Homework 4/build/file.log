@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  15 FEB 2022 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  16 FEB 2022 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -130,26 +130,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
+) (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/rsfso\rsfso.sty
+Package: rsfso 2013/11/02 v1.01 U/rsfso (Michael Sharpe)
+
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.te
+x
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.t
+ex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
 )
+\XKV@depth=\count273
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
 y
-\lst@mode=\count273
+\lst@mode=\count274
 \lst@gtempboxa=\box52
-\lst@token=\toks22
-\lst@length=\count274
+\lst@token=\toks24
+\lst@length=\count275
 \lst@currlwidth=\dimen157
-\lst@column=\count275
-\lst@pos=\count276
+\lst@column=\count276
+\lst@pos=\count277
 \lst@lostspace=\dimen158
 \lst@width=\dimen159
-\lst@newlines=\count277
-\lst@lineno=\count278
+\lst@newlines=\count278
+\lst@lineno=\count279
 \lst@maxwidth=\dimen160
 
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count279
-\lst@skipnumbers=\count280
+\c@lstnumber=\count280
+\lst@skipnumbers=\count281
 \lst@framebox=\box53
 )
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
@@ -161,26 +176,26 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
 pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count281
+\l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
 )
 (C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\build\file.aux)
 \openout1 = `file.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -188,17 +203,17 @@ Package caption Info: End \AtBeginDocument code.
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
+\scratchcounter=\count283
 \scratchdimen=\dimen161
 \scratchbox=\box55
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count285
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count286
 \MPscratchDim=\dimen162
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks26
 )
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
 f-base.sty
@@ -210,60 +225,58 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 s.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count288
+\c@lstlisting=\count289
  [1
 
-{C:/Users/Lawrence/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<fig1.jpg, id=13, 2166.0925pt x 1350.04375pt>
+{C:/Users/Lawrence/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<fig1.jpg, id=18, 2166.0925pt x 1350.04375pt>
 File: fig1.jpg Graphic file (type jpg)
 <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 33.
+Package pdftex.def Info: fig1.jpg  used on input line 46.
 (pdftex.def)             Requested size: 284.52756pt x 177.32465pt.
-<fig2.png, id=14, 433.62pt x 289.08pt>
+<fig2.png, id=19, 433.62pt x 289.08pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 38.
+Package pdftex.def Info: fig2.png  used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
-[2 <./fig1.jpg>]
-Overfull \hbox (51.62398pt too wide) detected at line 51
+ [3 <./fig1.jpg> <./fig2.png>]
+Overfull \hbox (85.86324pt too wide) detected at line 73
 \OML/cmm/m/it/12 y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ) = []
  []
 
-[3 <./fig2.png>]
-<fig3.jpg, id=27, 4047.12pt x 3035.34pt>
+[4]
+<fig3.jpg, id=28, 4047.12pt x 3035.34pt>
 File: fig3.jpg Graphic file (type jpg)
 <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg  used on input line 56.
+Package pdftex.def Info: fig3.jpg  used on input line 78.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
- [4 <./fig3.jpg>] [5]
+ [5 <./fig3.jpg>] [6] [7] [8]
 (C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\build\file.aux) ) 
 Here is how much of TeX's memory you used:
- 4552 strings out of 478659
- 76388 string characters out of 2844498
- 372137 words of memory out of 3000000
- 22655 multiletter control sequences out of 15000+600000
+ 4802 strings out of 478659
+ 80705 string characters out of 2844498
+ 382823 words of memory out of 3000000
+ 22891 multiletter control sequences out of 15000+600000
  409416 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,301b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,12n,77p,301b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/
 Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lawrence/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawr
-ence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
-/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Lawrence/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawrence/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lawr
+ence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb>
 Output written on "C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\bui
-ld\file.pdf" (5 pages, 1982697 bytes).
+ld\file.pdf" (8 pages, 1973565 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
