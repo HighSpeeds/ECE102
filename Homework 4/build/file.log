@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  16 FEB 2022 00:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  16 FEB 2022 01:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,6 +146,24 @@ ex
 \XKV@depth=\count273
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
 y
 \lst@mode=\count274
@@ -182,20 +200,20 @@ File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 (C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\build\file.aux)
 \openout1 = `file.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -232,15 +250,15 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <fig1.jpg, id=18, 2166.0925pt x 1350.04375pt>
 File: fig1.jpg Graphic file (type jpg)
 <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 46.
+Package pdftex.def Info: fig1.jpg  used on input line 53.
 (pdftex.def)             Requested size: 284.52756pt x 177.32465pt.
 <fig2.png, id=19, 433.62pt x 289.08pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 51.
+Package pdftex.def Info: fig2.png  used on input line 58.
 (pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
  [3 <./fig1.jpg> <./fig2.png>]
-Overfull \hbox (85.86324pt too wide) detected at line 73
+Overfull \hbox (85.86324pt too wide) detected at line 80
 \OML/cmm/m/it/12 y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ) = []
  []
 
@@ -248,35 +266,46 @@ Overfull \hbox (85.86324pt too wide) detected at line 73
 <fig3.jpg, id=28, 4047.12pt x 3035.34pt>
 File: fig3.jpg Graphic file (type jpg)
 <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg  used on input line 78.
+Package pdftex.def Info: fig3.jpg  used on input line 85.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
- [5 <./fig3.jpg>] [6] [7] [8]
+ [5 <./fig3.jpg>] [6] [7]
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (Problem5a.m) [8] (Problem5b.m)
+<fig4.png, id=42, 948.54375pt x 711.4078pt>
+File: fig4.png Graphic file (type png)
+<use fig4.png>
+Package pdftex.def Info: fig4.png  used on input line 165.
+(pdftex.def)             Requested size: 227.62204pt x 170.70879pt.
+ [9 <./fig4.png (PNG copy)>]
 (C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\build\file.aux) ) 
 Here is how much of TeX's memory you used:
- 4802 strings out of 478659
- 80705 string characters out of 2844498
- 382823 words of memory out of 3000000
- 22891 multiletter control sequences out of 15000+600000
- 409416 words of font info for 48 fonts, out of 8000000 for 9000
+ 5908 strings out of 478659
+ 93982 string characters out of 2844498
+ 581262 words of memory out of 3000000
+ 23979 multiletter control sequences out of 15000+600000
+ 410060 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,12n,77p,301b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/
-Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawrence/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lawr
-ence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
-Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
+ 67i,13n,77p,335b,1774s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:
+\Users\Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm120
+0.pk><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lawren
+ce/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
+sers/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6
+.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on "C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 4\bui
-ld\file.pdf" (8 pages, 1973565 bytes).
+ld\file.pdf" (9 pages, 2010493 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
