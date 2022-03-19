@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  7 MAR 2022 23:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.30)  18 MAR 2022 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,7 +146,10 @@ ex
 \XKV@depth=\count273
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.st
+y
+Package: placeins 2005/04/18  v 2.2
+) (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
@@ -209,7 +212,7 @@ File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
 )
-(C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 6\build\file.aux)
+(C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Report\build\file.aux)
 \openout1 = `file.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -272,94 +275,142 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Lawrence/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 [2]
-Overfull \hbox (82.35065pt too wide) detected at line 71
-[]
- []
-
-[3]
-Overfull \hbox (100.61206pt too wide) detected at line 87
-[]
- []
-
-[4]
-<fig1.png, id=25, 433.62pt x 289.08pt>
+(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (Step1Part1.m)
+<fig1.png, id=17, 632.3625pt x 474.27188pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 125.
-(pdftex.def)             Requested size: 227.62204pt x 151.74721pt.
+Package pdftex.def Info: fig1.png  used on input line 57.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
+ (Step1Part2.m)
+<fig2.png, id=18, 632.3625pt x 474.27188pt>
+File: fig2.png Graphic file (type png)
+<use fig2.png>
+Package pdftex.def Info: fig2.png  used on input line 63.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6 <./fig1.png>]
-Overfull \hbox (71.58623pt too wide) detected at line 159
-[]
- []
+[3 <./fig1.png (PNG copy)>] (Step2Part1.m)
+<fig4.png, id=23, 632.3625pt x 474.27188pt>
+File: fig4.png Graphic file (type png)
+<use fig4.png>
+Package pdftex.def Info: fig4.png  used on input line 70.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
 
 
-Overfull \hbox (87.8208pt too wide) detected at line 162
-\U/msa/m/n/12 ]\OML/cmm/m/it/12 X\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 j!\OT1/cmr/m
-/n/12 ) = [] [] + \OML/cmm/m/it/12 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./fig2.png (PNG copy)>]
+<fig3.png, id=27, 632.3625pt x 474.27188pt>
+File: fig3.png Graphic file (type png)
+<use fig3.png>
+Package pdftex.def Info: fig3.png  used on input line 76.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
+ (Step2Part2.m [5 <./fig4.png (PNG copy)> <./fig3.png (PNG copy)>])
+<fig6.png, id=31, 632.3625pt x 474.27188pt>
+File: fig6.png Graphic file (type png)
+<use fig6.png>
+Package pdftex.def Info: fig6.png  used on input line 84.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
+<fig5.png, id=32, 632.3625pt x 474.27188pt>
+File: fig5.png Graphic file (type png)
+<use fig5.png>
+Package pdftex.def Info: fig5.png  used on input line 89.
+(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
 
 
-(C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
-y
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [7] (Problem5c.m
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./fig6.png (PNG copy)>] (Step3Part1.m
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8
 .
 
 (C:\Users\Lawrence\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-)
-<fig2.png, id=39, 632.3625pt x 474.27188pt>
-File: fig2.png Graphic file (type png)
-<use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 168.
-(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
-<fig3.png, id=40, 632.3625pt x 474.27188pt>
-File: fig3.png Graphic file (type png)
-<use fig3.png>
-Package pdftex.def Info: fig3.png  used on input line 172.
-(pdftex.def)             Requested size: 227.62204pt x 170.71603pt.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+
+[7 <./fig5.png (PNG copy)>])
+<fig7.png, id=40, 1277.52281pt x 474.27188pt>
+File: fig7.png Graphic file (type png)
+<use fig7.png>
+Package pdftex.def Info: fig7.png  used on input line 102.
+(pdftex.def)             Requested size: 426.79134pt x 158.44243pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 102--103
+[][] 
+ []
+
+[8 <./fig7.png (PNG copy)>] (Step4Part1.m)
+<fig8.png, id=44, 1330.21968pt x 474.27188pt>
+File: fig8.png Graphic file (type png)
+<use fig8.png>
+Package pdftex.def Info: fig8.png  used on input line 118.
+(pdftex.def)             Requested size: 426.79134pt x 152.16812pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 118--119
+[][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./fig2.png (PNG copy)>] [9 <./fig3.png (PNG copy)>]
-(C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 6\build\file.aux) ) 
+[9] (Step4Part2.m [10 <./fig8.png (PNG copy)>])
+<fig9.png, id=53, 1166.10657pt x 474.27188pt>
+File: fig9.png Graphic file (type png)
+<use fig9.png>
+Package pdftex.def Info: fig9.png  used on input line 130.
+(pdftex.def)             Requested size: 426.79134pt x 173.5818pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 130--131
+[][] 
+ []
+
+(Step4Part3.m
+Overfull \hbox (138.74908pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11 <./fig9.png (PNG copy)>])
+<fig10.png, id=57, 632.3625pt x 474.27188pt>
+File: fig10.png Graphic file (type png)
+<use fig10.png>
+Package pdftex.def Info: fig10.png  used on input line 137.
+(pdftex.def)             Requested size: 284.52756pt x 213.39867pt.
+ [12 <./fig10.png (PNG copy)>]
+(C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Report\build\file.aux) ) 
 Here is how much of TeX's memory you used:
- 6438 strings out of 478659
- 100508 string characters out of 2844498
- 585881 words of memory out of 3000000
- 24493 multiletter control sequences out of 15000+600000
+ 6598 strings out of 478659
+ 103333 string characters out of 2844498
+ 590053 words of memory out of 3000000
+ 24628 multiletter control sequences out of 15000+600000
  412530 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,12n,77p,332b,2011s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:
-\Users\Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm120
-0.pk><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lawrence/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawren
-ce/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
-sers/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Lawrence/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Homework 6\bui
-ld\file.pdf" (9 pages, 216774 bytes).
+ 67i,15n,77p,301b,1766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Use
+rs\Lawrence\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk
+><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Lawrence/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lawrence/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lawrence/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users
+/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pf
+b><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lawrence/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on C:\Users\Lawrence\Desktop\UCLA\Classes\ECE102\Report\build\fi
+le.pdf (12 pages, 440732 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
